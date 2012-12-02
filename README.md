@@ -1,6 +1,6 @@
 # clj-website
 
-A Leiningen template for setting up a website using Noir, Enlive and Twitter Bootstrap. Heroku ready.
+A leiningen template to create heroku-ready web app projects using Noir, Enlive and Twitter Bootstrap.
 
 ## Usage
 

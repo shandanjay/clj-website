@@ -1,11 +1,11 @@
 (ns leiningen.new.clj-website
-  "Generate a Heroku-ready web project."
+  "Generate a web project with Noir, Enlive and Twitter Bootstrap."
   (:use [leiningen.new.templates :only [renderer year project-name
                                         sanitize-ns name-to-path ->files]]))
 
 (def render (renderer "clj_website"))
 
-(defn heroku-web
+(defn clj-website
   "A Heroku-ready web project generator using Noir, Enlive and Twitter Bootstrap."
   [name]
   (let [data {:name (project-name name)
