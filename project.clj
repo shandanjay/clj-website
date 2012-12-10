@@ -3,4 +3,6 @@
   :url "https://github.com/eraad/clj-website"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :eval-in-leiningen true)
+  :eval-in-leiningen true
+  :repositories [["releases" {:url "https://clojars.org/clj-website/lein-template"
+                              :creds :gpg}]])

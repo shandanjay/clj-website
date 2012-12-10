@@ -1,5 +1,5 @@
 (ns leiningen.new.clj-website
-  "Generate a web project with Noir, Enlive and Twitter Bootstrap."
+  "Generates a web project with Noir, Enlive and Twitter Bootstrap."
   (:use [leiningen.new.templates :only [renderer year project-name
                                         sanitize-ns name-to-path ->files]]))
 
@@ -21,12 +21,4 @@
              ["src/{{nested-dirs}}/core.clj" (render "core.clj" data)]
              ["test/{{nested-dirs}}/core_test.clj" (render "test.clj" data)]
              ["resources/public/css/custom.css" (render "custom.css")]
-             ["resources/public/css/bootstrap-responsive.css" (render "bootstrap-responsive.css" data)]
-             ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap-responsive.min.css" data)]
-             ["resources/public/css/bootstrap.css" (render "bootstrap.css" data)]
-             ["resources/public/css/bootstrap.min.css" (render "bootstrap.min.css" data)]
-             ["resources/public/js/bootstrap.js" (render "bootstrap.js" data)]
-             ["resources/public/js/bootstrap.min.js" (render "bootstrap.min.js" data)]
-             ["resources/public/img/glyphicons-halflings-white.png" (render "glyphicons-halflings-white.png" data)]
-             ["resources/public/img/glyphicons-halflings.png" (render "glyphicons-halflings.png" data)]
              ["src/{{nested-dirs}}/templates/layout.html" (render "layout.html")])))
